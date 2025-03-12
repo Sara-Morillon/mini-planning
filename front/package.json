@@ -5,9 +5,7 @@
   "scripts": {
     "prebuild": "tsc",
     "build": "vite build",
-    "watch": "vite dev",
-    "format": "prettier \"{tests,src}/**/*.{ts,tsx}\" --write",
-    "lint": "eslint \"{tests,src}/**/*.{ts,tsx}\""
+    "watch": "vite dev"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.1.0",
