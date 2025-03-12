@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "tsc",
     "build": "vite build",
-    "serve": "vite dev",
+    "watch": "vite dev",
     "format": "prettier \"{tests,src}/**/*.{ts,tsx}\" --write",
     "lint": "eslint \"{tests,src}/**/*.{ts,tsx}\""
   },

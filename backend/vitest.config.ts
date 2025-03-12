@@ -1,8 +1,7 @@
-import path from 'node:path'
-import dotenv from 'dotenv'
+import { loadEnvFile } from 'node:process'
 import { defineConfig } from 'vitest/config'
 
-dotenv.config({ path: path.join(__dirname, 'tests', '.env.test') })
+loadEnvFile('tests/.env.test')
 
 export default defineConfig({
   test: {
