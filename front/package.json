@@ -1,6 +1,6 @@
 {
-  "name": "@mini-planning/frontend",
-  "version": "2.1.1",
+  "name": "@mini-planning/front",
+  "version": "2.2.3",
   "type": "module",
   "scripts": {
     "prebuild": "tsc",
