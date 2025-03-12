@@ -26,6 +26,9 @@ jobs:
         with:
           version: latest
 
+      - name: Configure PNPM
+        run: pnpm config set inject-workspace-packages=true
+
       - name: Install
         run: pnpm install --frozen-lockfile
 
