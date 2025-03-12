@@ -3,6 +3,7 @@ FROM node:22-alpine AS base
 WORKDIR /usr/app
 
 RUN npm i -g pnpm
+RUN pnpm config set inject-workspace-packages=true
 
 FROM base as build
 

@@ -1,6 +1,6 @@
-import { join } from 'node:path'
 import express, { static as staticDir } from 'express'
 import helmet from 'helmet'
+import { join } from 'node:path'
 import { createApp, getApp, renderFile } from '../../src/app.js'
 import { mock, mockReq, mockRes } from '../mocks.js'
 
@@ -72,7 +72,7 @@ describe('getApp', () => {
     getApp(mockReq(), res)
     expect(res.json).toHaveBeenCalledWith({
       author: { name: 'Sara Morillon', url: 'https://saramorillon.com/' },
-      name: '@mini-planning/backend',
+      name: '@mini-planning/back',
       repository: { url: 'https://github.com/saramorillon/mini-planning' },
       version: expect.any(String),
     })
